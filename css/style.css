@@ -1,0 +1,158 @@
+/*font-family: 'Anonymous Pro', monospace;*/
+/*font-family: 'Russo One', sans-serif;*/
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 1% 10%;
+}
+header h2{
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 2px;
+    font-size: 300%;
+}
+
+header nav{
+    display: grid;
+    align-items: center;
+}
+
+header nav ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+}
+
+header nav ul li a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-transform: uppercase;
+    font-size: 150%;
+    color: #000;
+    font-weight: bold;
+    transition: all .2s ease-in;
+}
+
+header nav ul li a:hover{
+    transform: scale(1.3);
+    transition: all .2s ease-in;
+}
+
+main section.card_container{
+    background-color: #F1F1F1;
+    padding: 3% 10%;
+}
+
+section.card_container h1{
+    font-size: 240%;
+}
+
+section.card_container .cards_main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 24px;
+    row-gap: 20px;
+    padding-top: 5%;
+}
+
+section.card_container .cards_main .card_content{
+    display: grid;
+    justify-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 4%;
+    transition: all .2s ease-in;
+}
+
+section.card_container .cards_main .card_content:hover,
+section.card_container .cards_main .card_content:focus{
+    transform: rotate(4deg);
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+section.card_container .cards_main .card_content .image_content{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+section.card_container .cards_main .card_content .image_content img{
+    width: 371px;
+    height: 254px;
+}
+
+section.card_container .cards_main .card_content .image_content{
+    width: 100%;
+    height: 100%;
+}
+
+section.card_container .cards_main .card_content .text_content{
+    display: grid;
+    row-gap: 5px;
+    padding: 2%;
+}
+
+section.card_container .cards_main .card_content .text_content h4{
+    font-size: 150%;
+}
+
+footer {
+    display: grid;
+    row-gap: 15px;
+    padding: 2% 10% 2% 10%;
+    background-color: #121723;
+}
+footer .media_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+
+}
+
+footer .media_container h2{
+    font-family: 'Russo One', sans-serif;
+    color: #fff;
+}
+
+footer .media_container ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-items: end;
+}
+
+footer .media_container ul li a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-transform: uppercase;
+    font-size: 150%;
+    color: #fff;
+    font-weight: bold;
+    transition: all .2s ease-in;
+}
+
+footer .media_container ul li a:hover{
+    transform: scale(1.3);
+    transition: all .2s ease-in;
+}
+
+footer hr{
+    width: 100%;
+    color: #E6E8EC66;
+    opacity: 0.4;
+}
+
+footer h5{
+    color: #A1A6B4;
+    text-align: center;
+    font-size: 150%;
+}
